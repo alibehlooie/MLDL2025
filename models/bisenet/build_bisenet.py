@@ -1,9 +1,6 @@
 import torch
 from torch import nn
 from .build_contextpath import build_contextpath
-import warnings
-warnings.filterwarnings(action='ignore')
-
 
 class ConvBlock(torch.nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=2, padding=1):
